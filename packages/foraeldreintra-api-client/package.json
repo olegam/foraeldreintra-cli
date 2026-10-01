@@ -1,0 +1,1 @@
+{"name":"@foraeldreintra/api-client","version":"0.1.0","type":"module","exports":"./src/index.ts","dependencies":{"cheerio":"^1.2.0","tough-cookie":"^6.0.0"}}

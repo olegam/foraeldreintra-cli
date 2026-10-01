@@ -1,0 +1,21 @@
+{
+  "name": "foraeldreintra-cli-workspace",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "login": "bun packages/foraeldreintra-cli/src/index.ts login",
+    "cli": "bun packages/foraeldreintra-cli/src/index.ts",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "build": "bun scripts/build.ts",
+    "format": "prettier --write packages scripts",
+    "check": "bun run typecheck && bun test"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.11",
+    "prettier": "^3.9.9",
+    "typescript": "^5.9.3"
+  }
+}
